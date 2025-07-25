@@ -9,21 +9,31 @@ struct node_t
 
 struct node_t *Head;
 
-void add_node(struct node_t*,int data)
+/*void add_node(struct node_t*,int data)
 {
    struct node_t *temp=NULL;
 
-}
+}*/
 
+int array[10]={3,21,4,5,45,3434,22,332,255,43};
+
+int sorted_array[10]={3,5,6,7,10,22,33,44,56,77};
+
+extern int liner_search(int*dat,int length,int key);
 
 int main()
 {
     printf("Hello world!\n");
 
-    Head = (node_t*)malloc(sizeof(struct node_t));
+    Head = (struct node_t*)malloc(sizeof(struct node_t));
     Head->data=10;
     Head->next=NULL;
 
+    liner_search(array,10,45);
 
     return 0;
 }
+
+
+
+

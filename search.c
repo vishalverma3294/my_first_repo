@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int liner_search(int*dat,int length,int key)
+int linear_search(int*dat,int length,int key)
 {
     int*data=dat;
     int i=0;
@@ -23,24 +23,29 @@ int liner_search(int*dat,int length,int key)
     return -1;
 }
 
-int binary search(int *data, int low,int high,int key)
+int binary_search(int *data, int low, int high,int key)
 {
-    int mid=(low+high)/2;
+    int mid=0;
 
     while(low<=high)
     {
+        mid = low +((high-low)/2);
+
         if(data[mid]==key)
         {
+            printf("Position of Key = %d\n\r",mid);
             return mid;
         }
         else if(data[mid]>=key)
         {
-
+            high=mid-1;
         }
         else
         {
-
+            low=mid+1;
         }
     }
+        printf("Position of Key NOT FOUND\n\r");
+    return -1;
 
 }

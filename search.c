@@ -22,3 +22,25 @@ int liner_search(int*dat,int length,int key)
     printf("Position of Key = %d\n\r",i);
     return -1;
 }
+
+int binary search(int *data, int low,int high,int key)
+{
+    int mid=(low+high)/2;
+
+    while(low<=high)
+    {
+        if(data[mid]==key)
+        {
+            return mid;
+        }
+        else if(data[mid]>=key)
+        {
+
+        }
+        else
+        {
+
+        }
+    }
+
+}

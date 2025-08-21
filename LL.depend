@@ -3,11 +3,19 @@
 	<stdio.h>
 	<stdlib.h>
 
-1753440693 source:c:\repositories\c programs\ll\my_first_repo\main.c
+1755764453 source:c:\repositories\c programs\ll\my_first_repo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"linked_list.h"
+
+1755754355 source:c:\repositories\c programs\ll\my_first_repo\search.c
 	<stdio.h>
 	<stdlib.h>
 
-1753440693 source:c:\repositories\c programs\ll\my_first_repo\search.c
+1755764598 source:c:\repositories\c programs\ll\my_first_repo\linked_list_ops.c
+	"linked_list.h"
+
+1755763273 c:\repositories\c programs\ll\my_first_repo\linked_list.h
 	<stdio.h>
 	<stdlib.h>
 

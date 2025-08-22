@@ -20,13 +20,6 @@ void create_linked_list(struct node_t ** h, int * data, int length)
         temp=last;
     }
 
-/*
-    while((*h)!=NULL)
-    {
-        printf("Node = %d\r\n",(*h)->data);
-        (*h)=(*h)->next;
-    }
-*/
    traverse_list(*h);
 
 }
@@ -43,13 +36,25 @@ void traverse_list(struct node_t *Head)
 void insert(struct node_t **head, int pos,int data)
 {
     struct node_t * temp=NULL;
-
+    struct node_t *h=*head;
     if(pos ==0)
     {
     temp=(struct node_t *)malloc(sizeof(struct node_t));
     temp->next=*head;
     temp->data=data;
     *head=temp;
+    }
+    else
+    {
+
+    for(int i=0;(i<pos-1)&&(h);i++)
+    {
+        h = h->next;
+    }
+    temp=(struct node_t *)malloc(sizeof(struct node_t));
+    temp->data=data;
+    temp->next=h->next;
+    h->next=temp;
     }
 
 }

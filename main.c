@@ -10,8 +10,10 @@ int sorted_array[10]={3,5,6,7,10,22,33,44,56,77};
 int main()
 {
     printf("Hello world!\n");
-    create_linked_list(&Head,array,1);
+    create_linked_list(&Head,array,10);
 
+    insert(&Head,0,111);
+    traverse_list(Head);
     return 0;
 }
 

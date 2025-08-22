@@ -11,6 +11,6 @@ struct node_t
 
 extern struct node_t *Head;
 extern void create_linked_list(struct node_t ** h, int * data, int length);
-
-
+extern void traverse_list(struct node_t *Head);
+extern void insert(struct node_t **head, int pos,int data);
 #endif // LINKED_LIST_H_INCLUDED
